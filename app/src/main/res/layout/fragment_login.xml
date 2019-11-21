@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/signupBackgroundColor"
+    tools:context=".Fragments.LoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_email"
+            android:layout_width="@dimen/editTextWeight"
+            android:layout_height="wrap_content"
+            android:textColor="@color/editTextColor"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="@dimen/editTextMarginTop"
+            android:hint="Email"
+            android:paddingLeft="@dimen/editTextPaddingLeft"
+            android:text="ali.bhrzinia@gmail.com"
+            android:paddingStart="@dimen/editTextPaddingLeft"
+            android:textSize="@dimen/editTextTextSize" />
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_password"
+            android:layout_width="@dimen/editTextWeight"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:textColor="@color/editTextColor"
+            android:layout_marginTop="@dimen/editTextMarginTop"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/editTextPaddingLeft"
+            android:text="121212"
+            android:paddingStart="@dimen/editTextPaddingLeft"
+            android:textSize="@dimen/editTextTextSize" />
+
+        <LinearLayout
+            android:layout_width="@dimen/editTextWeight"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/editTextMarginTop"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/b_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Login"
+                android:textSize="@dimen/editTextTextSize" />
+
+            <Button
+                android:id="@+id/b_signUp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Sign Up"
+                android:textSize="@dimen/editTextTextSize" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_forgotPassword"
+            android:layout_width="@dimen/editTextWeight"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/editTextMarginTop"
+            android:text="forgot password ?"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+</FrameLayout>
